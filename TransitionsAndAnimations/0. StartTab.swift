@@ -24,9 +24,6 @@ struct StartTab: View {
             Tab("Complex", systemImage: "2.circle") {
                 ComplexTransitionsView()
             }
-            Tab("Card Flip", systemImage: "3.circle") {
-                CardFlipView()
-            }
         }
     }
 }
