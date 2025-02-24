@@ -15,18 +15,22 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StartTab: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Tab("Simple", systemImage: "1.circle") {
+                SimpleTransitionsView()
+            }
+            Tab("Complex", systemImage: "2.circle") {
+                ComplexTransitionsView()
+            }
+            Tab("Card Flip", systemImage: "3.circle") {
+                CardFlipView()
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    StartTab()
 }

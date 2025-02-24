@@ -12,14 +12,31 @@
 //----------------------------------------------
 // Copyright © 2025 CreaTECH Solutions. All rights reserved.
 
-
 import SwiftUI
 
-@main
-struct TransitionsAndAnimationsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            StartTab()
+struct CardView: View {
+    var body: some View {
+        VStack {
+            Text("Amazing Card")
+                .font(.title)
+                .bold()
+                .padding()
+            Image(systemName: "star.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 50, height: 50)
+                .foregroundColor(.yellow)
         }
+        .frame(width: 300, height: 200)
+        .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.white)
+                .shadow(radius: 10)
+        )
+        .padding()
     }
+}
+
+#Preview {
+    CardView()
 }

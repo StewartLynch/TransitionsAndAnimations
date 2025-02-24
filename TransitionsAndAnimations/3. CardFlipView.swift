@@ -12,14 +12,29 @@
 //----------------------------------------------
 // Copyright © 2025 CreaTECH Solutions. All rights reserved.
 
-
 import SwiftUI
 
-@main
-struct TransitionsAndAnimationsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            StartTab()
+struct CardFlipView: View {
+    @State private var showCard = false
+ 
+    var body: some View {
+        NavigationStack {
+            VStack {
+                Button(showCard ? "Hide Card" : "Show Card") {
+                    showCard.toggle()
+                }
+                .buttonStyle(.borderedProminent)
+                if showCard {
+                    CardView()
+                }
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("Card Fip Transition")
         }
     }
+}
+
+#Preview {
+    CardFlipView()
 }
