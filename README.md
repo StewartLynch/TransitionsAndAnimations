@@ -1,8 +1,8 @@
 # SwiftUI Transitions
 
-![mac128](Images/mac128.png) This is the Stater project for the video on SwiftUI transitions
+![mac128](Images/mac128.png) This is the completed source code for the video on SwiftUI transitions
 
-Video Release Date: April 13
+
 
 If you want to support my work, you can - </br>
 
