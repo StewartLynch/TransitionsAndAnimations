@@ -2,7 +2,9 @@
 
 ![mac128](Images/mac128.png) This is the Stater project for the video on SwiftUI transitions
 
-Video Release Date: April 13
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ZmdG0T_58wg
+" target="_blank"><img src="http://img.youtube.com/vi/ZmdG0T_58wg/0.jpg" 
+alt="SwiftUI Transitions" width="480" height="360" border="1" /></a>
 
 If you want to support my work, you can - </br>
 
